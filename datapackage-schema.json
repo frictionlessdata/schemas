@@ -1,0 +1,208 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DataPackage",
+    "description": "JSON Schema for validating datapackage.json files",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "pattern": "^([a-z\\.\\_\\-])+$"
+        },
+        "licences": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": { "type": "string" },
+                    "url": { "type": "string" }
+                },
+                "anyOf": [
+                    { "title": "id required", "required": ["id"] },
+                    { "title": "url required", "required": ["url"] }
+                ]
+            }
+        },
+        "datapackage_version": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "homepage": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "web": { "type": "string" },
+                    "email": { "type": "string" }
+                },
+                "anyOf": [
+                        { "title": "name required", "required": ["name"] },
+                        { "title": "web required", "required": ["web"] },
+                        { "title": "email required", "required": ["email"] }
+                ]
+            }
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "last_modified": {
+            "type": "string"
+        },
+        "image": {
+            "type": "string"
+        },
+        "bugs": {
+            "type": "string"
+        },
+        "maintainers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "web": {
+                        "type": "string"
+                    }
+                },
+                "required": ["name"]
+            }
+        },
+        "contributors": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "web": {
+                        "type": "string"
+                    }
+                },
+                "required": ["name"]
+            }
+        },
+        "publisher": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "web": {
+                        "type": "string"
+                    }
+                },
+                "required": ["name"]
+            }
+        },
+        "dependencies": {
+            "type": "object"
+        },
+        "resources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "format": {
+                        "type": "string"
+                    },
+                    "mediatype": {
+                        "type": "string",
+                        "pattern": "^(.+)/(.+)$"
+                    },
+                    "encoding": {
+                        "type": "string"
+                    },
+                    "bytes": {
+                        "type": "integer"
+                    },
+                    "hash": {
+                        "type": "string",
+                        "pattern": "^([a-fA-F0-9]{32})$"
+                    },
+                    "modified": {
+                        "type": "string"
+                    },
+                    "schema": {
+                        "type": "object"
+                    },
+                    "dialect": {
+                        "type": "object"
+                    },
+                    "sources": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": { "type": "string" },
+                                "web": { "type": "string" },
+                                "email": { "type": "string" }
+                            },
+                            "anyOf": [
+                                    { "title": "name required", "required": ["name"] },
+                                    { "title": "web required", "required": ["web"] },
+                                    { "title": "email required", "required": ["email"] }
+                            ]
+                        }
+                    },
+                    "licences": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": { "type": "string" },
+                                "url": { "type": "string" }
+                            },
+                            "anyOf": [
+                                { "title": "id required", "required": ["id"] },
+                                { "title": "url required", "required": ["url"] }
+                            ]
+                        }
+                    }
+                },
+                "anyOf": [
+                        { "title": "url required", "required": ["url"] },
+                        { "title": "path required", "required": ["path"] }
+                ]   
+            }
+        }
+    },
+    "required": ["name", "resources"]
+}
