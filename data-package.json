@@ -6,7 +6,7 @@
     "properties": {
         "name": {
             "type": "string",
-            "pattern": "^([a-z\\.\\_\\-])+$"
+            "pattern": "^([a-z0-9\\.\\_\\-])+$"
         },
         "licences": {
             "type": "array",
