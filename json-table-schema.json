@@ -54,6 +54,33 @@
                 },
                 "required": ["name"]
             }
+        },
+        "primaryKey": {
+            "enum": ["string", "array"]
+        },
+        "foreignKeys": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["fields", "reference"],
+                "properties": {
+                    "fields": {
+                        "enum": ["string", "array"]
+                    },
+                    "reference": {
+                        "type": "object",
+                        "required": ["resource", "fields"],
+                        "properties": {
+                            "resource": {
+                                "type": "string"
+                            },
+                            "fields": {
+                                "enum": ["string", "array"]
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "required": ["fields"]
