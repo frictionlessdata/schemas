@@ -24,9 +24,62 @@
                     },
                     "format": {
                         "type": "string"
+                    },
+                    "constraints": {
+                        "type": "object",
+                        "properties": {
+                            "required": {
+                                "type": "boolean"
+                            },
+                            "minLength": {
+                                "type": "integer"
+                            },
+                            "maxLength": {
+                                "type": "integer"
+                            },
+                            "unique": {
+                                "type": "boolean"
+                            },
+                            "pattern": {
+                                "type": "string"
+                            },
+                            "minimum": {
+                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                            },
+                            "maximum": {
+                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                            }
+                        }
                     }
                 },
                 "required": ["name"]
+            }
+        },
+        "primaryKey": {
+            "enum": ["string", "array"]
+        },
+        "foreignKeys": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["fields", "reference"],
+                "properties": {
+                    "fields": {
+                        "enum": ["string", "array"]
+                    },
+                    "reference": {
+                        "type": "object",
+                        "required": ["resource", "fields"],
+                        "properties": {
+                            "resource": {
+                                "type": "string"
+                            },
+                            "fields": {
+                                "enum": ["string", "array"]
+                            }
+                        }
+                    }
+                }
             }
         }
     },
