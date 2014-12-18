@@ -24,6 +24,32 @@
                     },
                     "format": {
                         "type": "string"
+                    },
+                    "constraints": {
+                        "type": "object",
+                        "properties": {
+                            "required": {
+                                "type": "boolean"
+                            },
+                            "minLength": {
+                                "type": "integer"
+                            },
+                            "maxLength": {
+                                "type": "integer"
+                            },
+                            "unique": {
+                                "type": "boolean"
+                            },
+                            "pattern": {
+                                "type": "string"
+                            },
+                            "minimum": {
+                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                            },
+                            "maximum": {
+                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                            }
+                        }
                     }
                 },
                 "required": ["name"]
