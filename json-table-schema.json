@@ -44,10 +44,16 @@
                                 "type": "string"
                             },
                             "minimum": {
-                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                                "oneOf": [
+                                    {"type": "string"},
+                                    {"type": "number"}
+                                ]
                             },
                             "maximum": {
-                                "enum": [ "string", "number", "integer", "date", "time", "datetime", "boolean", "binary", "object", "geopoint", "geojson", "array", "any" ]
+                                "oneOf": [
+                                    {"type": "string"},
+                                    {"type": "number"}
+                                ]
                             }
                         }
                     }
@@ -56,7 +62,10 @@
             }
         },
         "primaryKey": {
-            "enum": ["string", "array"]
+            "oneOf": [
+                {"type": "string"},
+                {"type": "array"}
+            ]
         },
         "foreignKeys": {
             "type": "array",
@@ -65,7 +74,10 @@
                 "required": ["fields", "reference"],
                 "properties": {
                     "fields": {
-                        "enum": ["string", "array"]
+                        "oneOf": [
+                            {"type": "string"},
+                            {"type": "array"}
+                        ]
                     },
                     "reference": {
                         "type": "object",
@@ -75,7 +87,10 @@
                                 "type": "string"
                             },
                             "fields": {
-                                "enum": ["string", "array"]
+                                "oneOf": [
+                                    {"type": "string"},
+                                    {"type": "array"}
+                                ]
                             }
                         }
                     }
