@@ -8,6 +8,12 @@
       "type": "string",
       "pattern": "^([a-z0-9\\.\\_\\-])+$"
     },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
     "licences": {
       "type": "array",
       "items": {
@@ -21,12 +27,6 @@
           { "title": "url required", "required": ["url"] }
         ]
       }
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
     },
     "homepage": {
       "type": "string"
@@ -60,6 +60,9 @@
       "type": "string"
     },
     "image": {
+      "type": "string"
+    },
+    "base": {
       "type": "string"
     },
     "author": {
