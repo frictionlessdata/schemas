@@ -7,19 +7,33 @@
     "name": {
       "type": "string",
       "title": "Name",
-      "pattern": "^([a-z0-9\\.\\_\\-])+$"
+      "pattern": "^([a-z0-9\\.\\_\\-])+$",
+      "propertyOrder": 10
     },
     "title": {
       "title": "Title",
-      "type": "string"
+      "type": "string",
+      "propertyOrder": 20
     },
     "description": {
       "title": "Description",
-      "type": "string"
+      "type": "string",
+      "propertyOrder": 30
+    },
+    "homepage": {
+      "title": "Home Page",
+      "type": "string",
+      "propertyOrder": 40
+    },
+    "version": {
+      "title": "Version",
+      "type": "string",
+      "propertyOrder": 50
     },
     "licences": {
       "title": "Licenses",
       "type": "array",
+      "propertyOrder": 60,
       "items": {
         "type": "object",
         "properties": {
@@ -32,53 +46,15 @@
         ]
       }
     },
-    "homepage": {
-      "title": "Home Page",
-      "type": "string"
-    },
-    "version": {
-      "title": "Version",
-      "type": "string"
-    },
-    "sources": {
-      "title": "Sources",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": { "type": "string" },
-          "web": { "type": "string" },
-          "email": { "type": "string" }
-        },
-        "anyOf": [
-          { "title": "name required", "required": ["name"] },
-          { "title": "web required", "required": ["web"] },
-          { "title": "email required", "required": ["email"] }
-        ]
-      }
-    },
-    "keywords": {
-      "title": "Keywords",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "image": {
-      "title": "Image",
-      "type": "string"
-    },
-    "base": {
-      "title": "Base",
-      "type": "string"
-    },
     "author": {
       "title": "Author",
-      "type": "string"
+      "type": "string",
+      "propertyOrder": 70
     },
     "contributors": {
       "title": "Contributors",
       "type": "array",
+      "propertyOrder": 80,
       "items": {
         "type": "object",
         "properties": {
@@ -95,13 +71,10 @@
         "required": ["name"]
       }
     },
-    "dataDependencies": {
-      "title": "Data Dependencies",
-      "type": "object"
-    },
     "resources": {
       "title": "Resources",
       "type": "array",
+      "propertyOrder": 90,
       "minItems": 0,
       "items": {
         "type": "object",
@@ -186,6 +159,47 @@
           { "title": "path required", "required": ["path"] }
         ]
       }
+    },
+    "keywords": {
+      "title": "Keywords",
+      "type": "array",
+      "propertyOrder": 100,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "title": "Sources",
+      "type": "array",
+      "propertyOrder": 110,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "web": { "type": "string" },
+          "email": { "type": "string" }
+        },
+        "anyOf": [
+          { "title": "name required", "required": ["name"] },
+          { "title": "web required", "required": ["web"] },
+          { "title": "email required", "required": ["email"] }
+        ]
+      }
+    },
+    "image": {
+      "title": "Image",
+      "type": "string",
+      "propertyOrder": 120
+    },
+    "base": {
+      "title": "Base",
+      "type": "string",
+      "propertyOrder": 130
+    },
+    "dataDependencies": {
+      "title": "Data Dependencies",
+      "type": "object",
+      "propertyOrder": 140
     }
   },
   "required": ["name"]
