@@ -6,15 +6,19 @@
   "properties": {
     "name": {
       "type": "string",
+      "title": "Name",
       "pattern": "^([a-z0-9\\.\\_\\-])+$"
     },
     "title": {
+      "title": "Title",
       "type": "string"
     },
     "description": {
+      "title": "Description",
       "type": "string"
     },
     "licences": {
+      "title": "Licenses",
       "type": "array",
       "items": {
         "type": "object",
@@ -29,12 +33,15 @@
       }
     },
     "homepage": {
+      "title": "Home Page",
       "type": "string"
     },
     "version": {
+      "title": "Version",
       "type": "string"
     },
     "sources": {
+      "title": "Sources",
       "type": "array",
       "items": {
         "type": "object",
@@ -51,24 +58,30 @@
       }
     },
     "keywords": {
+      "title": "Keywords",
       "type": "array",
       "items": {
         "type": "string"
       }
     },
     "last_modified": {
+      "title": "Last Modified",
       "type": "string"
     },
     "image": {
+      "title": "Image",
       "type": "string"
     },
     "base": {
+      "title": "Base",
       "type": "string"
     },
     "author": {
+      "title": "Author",
       "type": "string"
     },
     "contributors": {
+      "title": "Contributors",
       "type": "array",
       "items": {
         "type": "object",
@@ -87,50 +100,64 @@
       }
     },
     "dataDependencies": {
+      "title": "Data Dependencies",
       "type": "object"
     },
     "resources": {
+      "title": "Resources",
       "type": "array",
       "minItems": 0,
       "items": {
         "type": "object",
         "properties": {
           "url": {
+            "title": "URL",
             "type": "string"
           },
           "path": {
+            "title": "Path",
             "type": "string"
           },
           "name": {
+            "title": "Name",
             "type": "string"
           },
           "format": {
+            "title": "Format",
             "type": "string"
           },
           "mediatype": {
+            "title": "Media Type",
             "type": "string",
             "pattern": "^(.+)/(.+)$"
           },
           "encoding": {
+            "title": "Encoding",
             "type": "string"
           },
           "bytes": {
+            "title": "Bytes",
             "type": "integer"
           },
           "hash": {
+            "title": "Hash",
             "type": "string",
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
           },
           "modified": {
+            "title": "Modified",
             "type": "string"
           },
           "schema": {
+            "title": "Schema",
             "type": "object"
           },
           "dialect": {
+            "title": "Dialect",
             "type": "object"
           },
           "sources": {
+            "title": "Sources",
             "type": "array",
             "items": {
               "type": "object",
@@ -147,6 +174,7 @@
             }
           },
           "licences": {
+            "title": "Licenses",
             "type": "array",
             "items": {
               "type": "object",
