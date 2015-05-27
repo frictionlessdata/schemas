@@ -22,9 +22,6 @@
         ]
       }
     },
-    "datapackage_version": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
