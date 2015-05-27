@@ -65,43 +65,10 @@
     "bugs": {
       "type": "string"
     },
-    "maintainers": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "web": {
-            "type": "string"
-          }
-        },
-        "required": ["name"]
-      }
+    "author": {
+      "type": "string"
     },
     "contributors": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "web": {
-            "type": "string"
-          }
-        },
-        "required": ["name"]
-      }
-    },
-    "publisher": {
       "type": "array",
       "items": {
         "type": "object",
