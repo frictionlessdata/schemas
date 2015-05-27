@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "DataPackage",
-  "description": "JSON Schema for validating datapackage.json files",
+  "title": "Tabular Data Package",
+  "description": "JSON Schema for validating datapackage.json files according to the Tabular Data Package specification. Tabular Data Package is a Profile of the Data Package specification, extending and specializing it for the specific case of tabular data.",
   "type": "object",
   "properties": {
     "name": {
@@ -85,7 +85,7 @@
       "description": "The data resources that this package describes.",
       "type": "array",
       "propertyOrder": 90,
-      "minItems": 0,
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
@@ -189,8 +189,8 @@
           }
         },
         "anyOf": [
-          { "title": "url required", "required": ["url"] },
-          { "title": "path required", "required": ["path"] }
+          { "title": "url required", "required": ["name", "schema", "url"] },
+          { "title": "path required", "required": ["name", "schema", "path"] }
         ]
       }
     },
@@ -241,5 +241,5 @@
       "propertyOrder": 140
     }
   },
-  "required": ["name"]
+  "required": ["name", "resources"]
 }
