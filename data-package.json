@@ -86,7 +86,7 @@
         "required": ["name"]
       }
     },
-    "dependencies": {
+    "dataDependencies": {
       "type": "object"
     },
     "resources": {
