@@ -62,9 +62,6 @@
     "image": {
       "type": "string"
     },
-    "bugs": {
-      "type": "string"
-    },
     "author": {
       "type": "string"
     },
