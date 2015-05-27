@@ -7,31 +7,38 @@
     "name": {
       "type": "string",
       "title": "Name",
+      "description": "A lower-case string with only alphanumeric characters along with '.', '_' or '-' characters.",
       "pattern": "^([a-z0-9\\.\\_\\-])+$",
       "propertyOrder": 10
     },
     "title": {
       "title": "Title",
+      "description": "A human-readable title for this package.",
       "type": "string",
       "propertyOrder": 20
     },
     "description": {
       "title": "Description",
+      "description": "A text description of the package.",
       "type": "string",
-      "propertyOrder": 30
+      "propertyOrder": 30,
+      "format": "textarea"
     },
     "homepage": {
       "title": "Home Page",
+      "description": "The URL for this data package's website.",
       "type": "string",
       "propertyOrder": 40
     },
     "version": {
       "title": "Version",
+      "description": "A semantic versioning string for this package.",
       "type": "string",
       "propertyOrder": 50
     },
     "licences": {
       "title": "Licenses",
+      "description": "The license(s) under which this package is published.",
       "type": "array",
       "propertyOrder": 60,
       "items": {
@@ -48,11 +55,13 @@
     },
     "author": {
       "title": "Author",
+      "description": "The main contributor to this package.",
       "type": "string",
       "propertyOrder": 70
     },
     "contributors": {
       "title": "Contributors",
+      "description": "The contributors to this package.",
       "type": "array",
       "propertyOrder": 80,
       "items": {
@@ -73,57 +82,80 @@
     },
     "resources": {
       "title": "Resources",
+      "description": "The data resources that this package describes.",
       "type": "array",
       "propertyOrder": 90,
       "minItems": 0,
       "items": {
         "type": "object",
         "properties": {
+          "name": {
+            "title": "Name",
+            "description": "A lower-case string with only alphanumeric characters along with '.', '_' or '-' characters.",
+            "type": "string",
+            "propertyOrder": 10
+          },
           "url": {
             "title": "URL",
-            "type": "string"
+            "description": "The URL for this resource.",
+            "type": "string",
+            "propertyOrder": 20
           },
           "path": {
             "title": "Path",
-            "type": "string"
-          },
-          "name": {
-            "title": "Name",
-            "type": "string"
+            "description": "The relative path to this resource.",
+            "type": "string",
+            "propertyOrder": 30
           },
           "format": {
             "title": "Format",
-            "type": "string"
+            "description": "The file format of this resource.",
+            "type": "string",
+            "propertyOrder": 40
           },
           "mediatype": {
             "title": "Media Type",
+            "description": "The media type of this resource.",
             "type": "string",
+            "propertyOrder": 50,
             "pattern": "^(.+)/(.+)$"
           },
           "encoding": {
             "title": "Encoding",
-            "type": "string"
+            "description": "The file encoding of this resource.",
+            "type": "string",
+            "propertyOrder": 60
           },
           "bytes": {
             "title": "Bytes",
-            "type": "integer"
+            "description": "The size of this resource in bytes.",
+            "type": "integer",
+            "propertyOrder": 70
           },
           "hash": {
             "title": "Hash",
             "type": "string",
+            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefxing the hash value with the algorithm name in lowercase, followed by a colon.",
+            "propertyOrder": 80,
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
           },
           "schema": {
             "title": "Schema",
-            "type": "object"
+            "description": "The schema of this resource.",
+            "type": "object",
+            "propertyOrder": 90
           },
           "dialect": {
             "title": "Dialect",
-            "type": "object"
+            "description": "The dialect of this resource file type.",
+            "type": "object",
+            "propertyOrder": 100
           },
           "sources": {
             "title": "Sources",
+            "description": "The raw sources for this resource.",
             "type": "array",
+            "propertyOrder": 110,
             "items": {
               "type": "object",
               "properties": {
@@ -140,7 +172,9 @@
           },
           "licences": {
             "title": "Licenses",
+            "description": "The license(s) under which this resource is released.",
             "type": "array",
+            "propertyOrder": 120,
             "items": {
               "type": "object",
               "properties": {
@@ -162,6 +196,7 @@
     },
     "keywords": {
       "title": "Keywords",
+      "description": "A list of keywords that describe this package.",
       "type": "array",
       "propertyOrder": 100,
       "items": {
@@ -170,6 +205,7 @@
     },
     "sources": {
       "title": "Sources",
+      "description": "The raw sources for this package.",
       "type": "array",
       "propertyOrder": 110,
       "items": {
@@ -188,16 +224,19 @@
     },
     "image": {
       "title": "Image",
+      "description": "A image to represent this package.",
       "type": "string",
       "propertyOrder": 120
     },
     "base": {
       "title": "Base",
+      "description": "A base URI used to resolve resources that specify relative paths.",
       "type": "string",
       "propertyOrder": 130
     },
     "dataDependencies": {
       "title": "Data Dependencies",
+      "description": "Pre-requisite Data Packages on which this package requires in order to install.",
       "type": "object",
       "propertyOrder": 140
     }
