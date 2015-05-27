@@ -64,10 +64,6 @@
         "type": "string"
       }
     },
-    "last_modified": {
-      "title": "Last Modified",
-      "type": "string"
-    },
     "image": {
       "title": "Image",
       "type": "string"
@@ -143,10 +139,6 @@
             "title": "Hash",
             "type": "string",
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
-          },
-          "modified": {
-            "title": "Modified",
-            "type": "string"
           },
           "schema": {
             "title": "Schema",
