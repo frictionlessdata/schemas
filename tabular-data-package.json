@@ -135,7 +135,7 @@
           "hash": {
             "title": "Hash",
             "type": "string",
-            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefxing the hash value with the algorithm name in lowercase, followed by a colon.",
+            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefixing the hash value with the algorithm name in lowercase, followed by a colon.",
             "propertyOrder": 80,
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
           },
