@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Tabular Data Package",
-  "description": "JSON Schema for validating datapackage.json files according to the Tabular Data Package specification. Tabular Data Package is a Profile of the Data Package specification, extending and specializing it for the specific case of tabular data.",
+  "description": "Tabular Data Package is a format and specification for convenient delivery, installation and management of tabular data.",
   "type": "object",
   "properties": {
     "name": {
@@ -93,69 +93,84 @@
             "title": "Name",
             "description": "A lower-case string with only alphanumeric characters along with '.', '_' or '-' characters.",
             "type": "string",
+            "pattern": "^([a-z0-9\\.\\_\\-])+$",
             "propertyOrder": 10
           },
+          "title": {
+            "title": "Title",
+            "description": "A human-readable title for this package.",
+            "type": "string",
+            "propertyOrder": 20
+          },
+          "description": {
+            "title": "Description",
+            "description": "A text description of the package.",
+            "type": "string",
+            "propertyOrder": 30,
+            "format": "textarea"
+          },
+          "schema": {
+            "title": "Schema",
+            "description": "The schema of this resource.",
+            "type": "object",
+            "propertyOrder": 40
+          },
+
           "url": {
             "title": "URL",
             "description": "The URL for this resource.",
             "type": "string",
-            "propertyOrder": 20
+            "propertyOrder": 50
           },
           "path": {
             "title": "Path",
             "description": "The relative path to this resource.",
             "type": "string",
-            "propertyOrder": 30
+            "propertyOrder": 60
           },
           "format": {
             "title": "Format",
             "description": "The file format of this resource.",
             "type": "string",
-            "propertyOrder": 40
+            "propertyOrder": 70
           },
           "mediatype": {
             "title": "Media Type",
             "description": "The media type of this resource.",
             "type": "string",
-            "propertyOrder": 50,
+            "propertyOrder": 80,
             "pattern": "^(.+)/(.+)$"
           },
           "encoding": {
             "title": "Encoding",
             "description": "The file encoding of this resource.",
             "type": "string",
-            "propertyOrder": 60
+            "propertyOrder": 90
           },
           "bytes": {
             "title": "Bytes",
             "description": "The size of this resource in bytes.",
             "type": "integer",
-            "propertyOrder": 70
+            "propertyOrder": 100
           },
           "hash": {
             "title": "Hash",
             "type": "string",
-            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefixing the hash value with the algorithm name in lowercase, followed by a colon.",
-            "propertyOrder": 80,
+            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefxing the hash value with the algorithm name in lowercase, followed by a colon.",
+            "propertyOrder": 110,
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
-          },
-          "schema": {
-            "title": "Schema",
-            "description": "The schema of this resource.",
-            "type": "object",
-            "propertyOrder": 90
           },
           "dialect": {
             "title": "Dialect",
             "description": "The dialect of this resource file type.",
             "type": "object",
-            "propertyOrder": 100
+            "propertyOrder": 120
           },
           "sources": {
             "title": "Sources",
             "description": "The raw sources for this resource.",
             "type": "array",
-            "propertyOrder": 110,
+            "propertyOrder": 130,
             "items": {
               "type": "object",
               "properties": {
@@ -174,7 +189,7 @@
             "title": "Licenses",
             "description": "The license(s) under which this resource is released.",
             "type": "array",
-            "propertyOrder": 120,
+            "propertyOrder": 140,
             "items": {
               "type": "object",
               "properties": {
