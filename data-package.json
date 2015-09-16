@@ -8,7 +8,7 @@
       "title": "Name",
       "description": "A lower-case string with only alphanumeric characters along with '.', '_' or '-' characters.",
       "type": "string",
-      "pattern": "^([a-z0-9\\.\\_\\-])+$",
+      "pattern": "^([a-z0-9._-])+$",
       "propertyOrder": 10
     },
     "title": {
@@ -93,7 +93,7 @@
             "title": "Name",
             "description": "A lower-case string with only alphanumeric characters along with '.', '_' or '-' characters.",
             "type": "string",
-            "pattern": "^([a-z0-9\\.\\_\\-])+$",
+            "pattern": "^([a-z0-9._-])+$",
             "propertyOrder": 10
           },
           "title": {
