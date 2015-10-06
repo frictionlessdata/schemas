@@ -54,6 +54,11 @@
                                     {"type": "string"},
                                     {"type": "number"}
                                 ]
+                            },
+                            "enum": {
+                                "type": "array",
+                                "minItems": 1,
+                                "uniqueItems": true
                             }
                         }
                     }
