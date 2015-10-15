@@ -73,6 +73,7 @@
       "description": "The contributors to this package.",
       "type": "array",
       "propertyOrder": 80,
+      "hideFromForms": true,
       "items": {
         "type": "object",
         "properties": {
