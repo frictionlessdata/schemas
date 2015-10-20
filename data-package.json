@@ -73,7 +73,9 @@
       "description": "The contributors to this package.",
       "type": "array",
       "propertyOrder": 80,
-      "hidden": true,
+      "options": {
+        "hidden": true
+      },
       "items": {
         "type": "object",
         "properties": {
