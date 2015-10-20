@@ -176,13 +176,19 @@
             "title": "Dialect",
             "description": "The dialect of this resource file type.",
             "type": "object",
-            "propertyOrder": 120
+            "propertyOrder": 120,
+            "options": {
+              "hidden": true
+            }
           },
           "sources": {
             "title": "Sources",
             "description": "The raw sources for this resource.",
             "type": "array",
             "propertyOrder": 130,
+            "options": {
+              "hidden": true
+            }
             "items": {
               "type": "object",
               "properties": {
@@ -223,6 +229,9 @@
       "description": "The raw sources for this package.",
       "type": "array",
       "propertyOrder": 110,
+      "options": {
+        "hidden": true
+      }
       "items": {
         "type": "object",
         "properties": {
@@ -241,19 +250,28 @@
       "title": "Image",
       "description": "A image to represent this package.",
       "type": "string",
-      "propertyOrder": 120
+      "propertyOrder": 120,
+      "options": {
+        "hidden": true
+      }
     },
     "base": {
       "title": "Base",
       "description": "A base URI used to resolve resources that specify relative paths.",
       "type": "string",
-      "propertyOrder": 130
+      "propertyOrder": 130,
+      "options": {
+        "hidden": true
+      }
     },
     "dataDependencies": {
       "title": "Data Dependencies",
       "description": "Pre-requisite Data Packages on which this package requires in order to install.",
       "type": "object",
-      "propertyOrder": 140
+      "propertyOrder": 140,
+      "options": {
+        "hidden": true
+      }
     }
   },
   "required": ["name"]
