@@ -188,7 +188,7 @@
             "propertyOrder": 130,
             "options": {
               "hidden": true
-            }
+            },
             "items": {
               "type": "object",
               "properties": {
@@ -231,7 +231,7 @@
       "propertyOrder": 110,
       "options": {
         "hidden": true
-      }
+      },
       "items": {
         "type": "object",
         "properties": {
