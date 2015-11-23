@@ -12,3 +12,14 @@ The following schemas have been created:
 
 The schemas can be used as standalone schemas or combined to carry out validation of more complex documents, e.g. those that conform to the Tabular Data Package specification.
 
+## Registry
+
+The registry is a CSV file ([registry.csv](registry.csv)) that contains
+metadata about the schemas. It has the following attributes:
+
+| name          | description                             | example                                                                                  |
+| ------------- | --------------------------------------- | ---------------------------------------------------------------------------------------- |
+| id            | locally unique identifier               | tabular                                                                                  |
+| title         | human-readable name                     | Tabular Data Package                                                                     |
+| schema        | URL to the related JSON Schema          | https://raw.githubusercontent.com/dataprotocols/schemas/master/tabular-data-package.json |
+| specification | URL to the human-readable specification | http://dataprotocols.org/tabular-data-package/                                           |
