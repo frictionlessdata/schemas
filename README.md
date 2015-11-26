@@ -1,5 +1,7 @@
 #JSON Schemas for Data Protocol Formats
 
+[![Build Status](https://travis-ci.org/dataprotocols/schemas.svg?branch=master)](https://travis-ci.org/dataprotocols/schemas)
+
 This project provides schemas for several of the simple data formats published as part of the [Data Protocols](http://dataprotocols.org/) effort.
 
 The schemas have been implemented using the [JSON Schema](http://json-schema.org/) specification which provides a simple declarative format for describing the structure of JSON documents.
