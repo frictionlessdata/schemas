@@ -10,6 +10,8 @@ The registry is implemented as simple CSV file, and there are libraries in [Java
 
 Here you'll find schemas for [Data Package](http://dataprotocols.org/data-packages/), various Data Package Profiles, [JSON Table Schemas](http://dataprotocols.org/json-table-schema/), [CSV Dialect Description Format](http://dataprotocols.org/csv-dialect/) and more.
 
+Note that some of the schemas also feature information for [json-editor](https://github.com/jdorn/json-editor) - useful for building web forms and other UI components dynamically from a schema. We use this extensively in [DataPackagist](https://github.com/okfn/datapackagist) to build UIs for creating Data Packages.
+
 ## The registry
 
 The registry enables consumers to get access to schemas and documentation for the family of Data Package specifications, and related specifications like JSON Table Schema and CSV Dialect Description Format. See [Data Protocols](http://dataprotocols.org/) for more information.
