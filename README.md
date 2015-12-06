@@ -1,5 +1,7 @@
 # JSON Schemas for Data Protocol Formats
 
+[![Build Status](https://travis-ci.org/dataprotocols/schemas.svg?branch=master)](https://travis-ci.org/dataprotocols/schemas)
+
 JSON Schemas, and a registry, for the Data Package family of specifications. Read more about Data Packages at [Data Protocols](http://dataprotocols.org/).
 
 The schemas are implemented using [JSON Schema](http://json-schema.org/), a specification which provides a simple declarative format for describing the structure of JSON documents.

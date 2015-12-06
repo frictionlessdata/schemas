@@ -73,20 +73,30 @@
       "description": "The contributors to this package.",
       "type": "array",
       "propertyOrder": 80,
+      "options": {
+        "hidden": true
+      },
       "items": {
-        "type": "object",
-        "properties": {
-          "name": {
+        "oneOf": [
+          {
             "type": "string"
           },
-          "email": {
-            "type": "string"
-          },
-          "web": {
-            "type": "string"
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "web": {
+                "type": "string"
+              }
+            },
+            "required": ["name"]
           }
-        },
-        "required": ["name"]
+        ]
       }
     },
     "resources": {
@@ -121,7 +131,14 @@
           "schema": {
             "title": "Schema",
             "description": "The schema of this resource.",
-            "type": "object",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object"
+              }
+            ],
             "propertyOrder": 40
           },
 
@@ -165,7 +182,7 @@
           "hash": {
             "title": "Hash",
             "type": "string",
-            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefxing the hash value with the algorithm name in lowercase, followed by a colon.",
+            "description": "The MD5 hash of this resource. Other hash algorithms can be used by prefixing the hash value with the algorithm name in lowercase, followed by a colon.",
             "propertyOrder": 110,
             "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
           },
@@ -173,13 +190,19 @@
             "title": "Dialect",
             "description": "The dialect of this resource file type.",
             "type": "object",
-            "propertyOrder": 120
+            "propertyOrder": 120,
+            "options": {
+              "hidden": true
+            }
           },
           "sources": {
             "title": "Sources",
             "description": "The raw sources for this resource.",
             "type": "array",
             "propertyOrder": 130,
+            "options": {
+              "hidden": true
+            },
             "items": {
               "type": "object",
               "properties": {
@@ -220,6 +243,9 @@
       "description": "The raw sources for this package.",
       "type": "array",
       "propertyOrder": 110,
+      "options": {
+        "hidden": true
+      },
       "items": {
         "type": "object",
         "properties": {
@@ -238,19 +264,28 @@
       "title": "Image",
       "description": "A image to represent this package.",
       "type": "string",
-      "propertyOrder": 120
+      "propertyOrder": 120,
+      "options": {
+        "hidden": true
+      }
     },
     "base": {
       "title": "Base",
       "description": "A base URI used to resolve resources that specify relative paths.",
       "type": "string",
-      "propertyOrder": 130
+      "propertyOrder": 130,
+      "options": {
+        "hidden": true
+      }
     },
     "dataDependencies": {
       "title": "Data Dependencies",
       "description": "Pre-requisite Data Packages on which this package requires in order to install.",
       "type": "object",
-      "propertyOrder": 140
+      "propertyOrder": 140,
+      "options": {
+        "hidden": true
+      }
     }
   },
   "required": ["name"]
