@@ -6,35 +6,35 @@
   "required": [ "name" ],
   "properties": {
     "name": {
-      "$ref": "definitions.json#/definitions/name",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/name",
       "propertyOrder": 10
     },
     "title": {
-      "$ref": "definitions.json#/license",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
       "propertyOrder": 20
     },
     "description": {
-      "$ref": "definitions.json#/description",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/description",
       "format": "textarea"
     },
     "homepage": {
-      "$ref": "definitions.json#/homepage",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/homepage",
       "propertyOrder": 40
     },
     "version": {
-      "$ref": "definitions.json#/version",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/version",
       "propertyOrder": 50
     },
     "license": {
-      "$ref": "definitions.json#/license",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
       "propertyOrder": 60
     },
     "author": {
-      "$ref": "definitions.json#/author",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/author",
       "propertyOrder": 70
     },
     "contributors": {
-      "$ref": "definitions.json#/contributors",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/contributors",
       "propertyOrder": 80,
       "options": { "hidden": true }
     },
@@ -48,66 +48,66 @@
         "type": "object",
         "properties": {
           "name": {
-            "$ref": "definitions.json#/name",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/name",
             "propertyOrder": 10
           },
           "title": {
-            "$ref": "definitions.json#/license",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
             "propertyOrder": 20
           },
           "description": {
-            "$ref": "definitions.json#/description",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/description",
             "propertyOrder": 30,
             "format": "textarea"
           },
           "schema": {
-            "$ref": "definitions.json#/schema",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/schema",
             "propertyOrder": 40
           },
           "url": {
-            "$ref": "definitions.json#/url",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/url",
             "propertyOrder": 50
           },
           "path": {
-            "$ref": "definitions.json#/path",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/path",
             "propertyOrder": 60
           },
           "data": {
-            "$ref": "definitions.json#/data",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/data",
             "propertyOrder": 70
           },
           "format": {
-            "$ref": "definitions.json#/format",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/format",
             "propertyOrder": 80
           },
           "mediatype": {
-            "$ref": "definitions.json#/mediatype",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/mediatype",
             "propertyOrder": 90
           },
           "encoding": {
-            "$ref": "definitions.json#/encoding",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/encoding",
             "propertyOrder": 100
           },
           "bytes": {
-            "$ref": "definitions.json#/bytes",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/bytes",
             "propertyOrder": 110
           },
           "hash": {
-            "$ref": "definitions.json#/hash",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/hash",
             "propertyOrder": 120
           },
           "dialect": {
-            "$ref": "definitions.json#/dialect",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/dialect",
             "propertyOrder": 130,
             "options": { "hidden": true }
           },
           "sources": {
-            "$ref": "definitions.json#/sources",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/sources",
             "propertyOrder": 140,
             "options": { "hidden": true }
           },
           "licence": {
-            "$ref": "definitions.json#/license",
+            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
             "description": "The license under which the resource is published.",
             "propertyOrder": 150
           }
@@ -120,26 +120,26 @@
       }
     },
     "keywords": {
-      "$ref": "definitions.json#/keywords",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/keywords",
       "propertyOrder": 100
     },
     "sources": {
-      "$ref": "definitions.json#/sources",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/sources",
       "propertyOrder": 110,
       "options": { "hidden": true }
     },
     "image": {
-      "$ref": "definitions.json#/image",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/image",
       "propertyOrder": 120,
       "options": { "hidden": true }
     },
     "base": {
-      "$ref": "definitions.json#/base",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/base",
       "propertyOrder": 130,
       "options": { "hidden": true }
     },
     "dataDependencies": {
-      "$ref": "definitions.json#/dataDependencies",
+      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/dataDependencies",
       "propertyOrder": 140,
       "options": { "hidden": true }
     }
