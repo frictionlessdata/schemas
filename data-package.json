@@ -214,7 +214,7 @@
               ]
             }
           },
-          "licence": {
+          "license": {
             "$ref": "#/definitions/license",
             "description": "The license under which the resource is published.",
             "propertyOrder": 140
