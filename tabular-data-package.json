@@ -3,6 +3,24 @@
   "title": "Tabular Data Package",
   "description": "Tabular Data Package is a format and specification for convenient delivery, installation and management of tabular data.",
   "type": "object",
+  "definitions": {
+    "contributor": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string" },
+            "web": { "type": "string" }
+          },
+          "required": ["name"]
+        }
+      ]
+    }
+  },
   "properties": {
     "name": {
       "type": "string",
@@ -54,9 +72,9 @@
       }
     },
     "author": {
+      "$ref": "#/definitions/contributor",
       "title": "Author",
       "description": "The main contributor to this package.",
-      "type": "string",
       "propertyOrder": 70
     },
     "contributors": {
@@ -65,19 +83,7 @@
       "type": "array",
       "propertyOrder": 80,
       "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "web": {
-            "type": "string"
-          }
-        },
-        "required": ["name"]
+        "$ref": "#/definitions/contributor"
       }
     },
     "resources": {
