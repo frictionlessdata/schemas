@@ -6,35 +6,35 @@
   "required": [ "name", "resources" ],
   "properties": {
     "name": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/name",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/name",
       "propertyOrder": 10
     },
     "title": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
       "propertyOrder": 20
     },
     "description": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/description",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/description",
       "format": "textarea"
     },
     "homepage": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/homepage",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/homepage",
       "propertyOrder": 40
     },
     "version": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/version",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/version",
       "propertyOrder": 50
     },
     "license": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
       "propertyOrder": 60
     },
     "author": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/author",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/author",
       "propertyOrder": 70
     },
     "contributors": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/contributors",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/contributors",
       "propertyOrder": 80,
       "options": { "hidden": true }
     },
@@ -48,66 +48,66 @@
         "type": "object",
         "properties": {
           "name": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/name",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/name",
             "propertyOrder": 10
           },
           "title": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
             "propertyOrder": 20
           },
           "description": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/description",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/description",
             "propertyOrder": 30,
             "format": "textarea"
           },
           "schema": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/schema",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/schema",
             "propertyOrder": 40
           },
           "url": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/url",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/url",
             "propertyOrder": 50
           },
           "path": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/path",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/path",
             "propertyOrder": 60
           },
           "data": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/data",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/data",
             "propertyOrder": 70
           },
           "format": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/format",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/format",
             "propertyOrder": 80
           },
           "mediatype": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/mediatype",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/mediatype",
             "propertyOrder": 90
           },
           "encoding": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/encoding",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/encoding",
             "propertyOrder": 100
           },
           "bytes": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/bytes",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/bytes",
             "propertyOrder": 110
           },
           "hash": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/hash",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/hash",
             "propertyOrder": 120
           },
           "dialect": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/dialect",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/dialect",
             "propertyOrder": 130,
             "options": { "hidden": true }
           },
           "sources": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/sources",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/sources",
             "propertyOrder": 140,
             "options": { "hidden": true }
           },
           "licence": {
-            "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/license",
+            "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
             "description": "The license under which the resource is published.",
             "propertyOrder": 150
           }
@@ -120,26 +120,26 @@
       }
     },
     "keywords": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/keywords",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/keywords",
       "propertyOrder": 100
     },
     "sources": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/sources",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/sources",
       "propertyOrder": 110,
       "options": { "hidden": true }
     },
     "image": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/image",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/image",
       "propertyOrder": 120,
       "options": { "hidden": true }
     },
     "base": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/base",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/base",
       "propertyOrder": 130,
       "options": { "hidden": true }
     },
     "dataDependencies": {
-      "$ref": "https://raw.githubusercontent.com/dataprotocols/schemas/feature/schemas.datapackages.org/definitions.json#/dataDependencies",
+      "$ref": "http://schemas.datapackages.org/definitions.json#/define/dataDependencies",
       "propertyOrder": 140,
       "options": { "hidden": true }
     }

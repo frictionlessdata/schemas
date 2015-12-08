@@ -1,18 +1,18 @@
 # JSON Schemas for Data Protocol Formats
 
-[![Build Status](https://travis-ci.org/dataprotocols/schemas.svg?branch=master)](https://travis-ci.org/dataprotocols/schemas)
+[![Build Status](http://travis-ci.org/dataprotocols/schemas.svg?branch=master)](http://travis-ci.org/dataprotocols/schemas)
 
 JSON Schemas, and a registry, for the Data Package family of specifications. Read more about Data Packages at [Data Protocols](http://dataprotocols.org/).
 
 The schemas are implemented using [JSON Schema](http://json-schema.org/), a specification which provides a simple declarative format for describing the structure of JSON documents.
 
-The registry is implemented as simple CSV file, and there are libraries in [Javascript](https://github.com/okfn/datapackage-registry-js) and [Python](https://github.com/okfn/datapackage-registry-py) that work with the registry directly.
+The registry is implemented as simple CSV file, and there are libraries in [Javascript](http://github.com/okfn/datapackage-registry-js) and [Python](http://github.com/okfn/datapackage-registry-py) that work with the registry directly.
 
 ## The schemas
 
 Here you'll find schemas for [Data Package](http://dataprotocols.org/data-packages/), various Data Package Profiles, [JSON Table Schemas](http://dataprotocols.org/json-table-schema/), [CSV Dialect Description Format](http://dataprotocols.org/csv-dialect/) and more.
 
-Note that some of the schemas also feature information for [json-editor](https://github.com/jdorn/json-editor) - useful for building web forms and other UI components dynamically from a schema. We use this extensively in [DataPackagist](https://github.com/okfn/datapackagist) to build UIs for creating Data Packages.
+Note that some of the schemas also feature information for [json-editor](http://github.com/jdorn/json-editor) - useful for building web forms and other UI components dynamically from a schema. We use this extensively in [DataPackagist](http://github.com/okfn/datapackagist) to build UIs for creating Data Packages.
 
 ## The registry
 
