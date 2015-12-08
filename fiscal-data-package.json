@@ -93,55 +93,58 @@
           "type": "object",
           "patternProperties": {
             "^\\w+": {
-              "attributes": {
-                "title": "Attributes",
-                "description": "An array of attribute objects that make up the dimension",
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "type": "object",
-                  "patternProperties": {
-                    "^\\w+": {
-                      "type": "object",
-                      "properties": {
-                        "source": {
-                          "type": "string"
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "title": "Attributes",
+                  "description": "An array of attribute objects that make up the dimension",
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "patternProperties": {
+                      "^\\w+": {
+                        "type": "object",
+                        "properties": {
+                          "source": {
+                            "type": "string"
+                          },
+                          "resource": {
+                            "type": "string"
+                          }
                         },
-                        "resource": {
-                          "type": "string"
-                        }
-                      },
-                      "required": ["source"]
+                        "required": ["source"]
+                      }
                     }
                   }
-                }
-              },
-              "primaryKey": {
-                "title": "Primary Key",
-                "description": "Either an array of strings corresponding to the name attributes in a set of field objects in the fields array or a single string corresponding to one of these names. The value of primaryKey indicates the primary key or primary keys for the dimension.",
-                "oneOf": [
-                  {
-                    "type": "string"
-                  },
-                  {
-                    "type": "array",
-                    "minItems": 1,
-                    "items": {
+                },
+                "primaryKey": {
+                  "title": "Primary Key",
+                  "description": "Either an array of strings corresponding to the name attributes in a set of field objects in the fields array or a single string corresponding to one of these names. The value of primaryKey indicates the primary key or primary keys for the dimension.",
+                  "oneOf": [
+                    {
                       "type": "string"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string"
+                      }
                     }
-                  }
-                ]
-              },
-              "dimensionType": {
-                "title": "Dimension Type",
-                "description": "Describes what kind of a dimension it is.",
-                "type": "string",
-                "enum": ["datetime","entity","classification","activity","fact","location","other"]
-              },
-              "classificationType": {
-                "title": "Classification Type",
-                "description": "The type of the classification.",
-                "enum": ["functional","administrative","economic"]
+                  ]
+                },
+                "dimensionType": {
+                  "title": "Dimension Type",
+                  "description": "Describes what kind of a dimension it is.",
+                  "type": "string",
+                  "enum": ["datetime","entity","classification","activity","fact","location","other"]
+                },
+                "classificationType": {
+                  "title": "Classification Type",
+                  "description": "The type of the classification.",
+                  "enum": ["functional","administrative","economic"]
+                }
               }
             }
           }
