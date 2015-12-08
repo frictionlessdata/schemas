@@ -6,35 +6,35 @@
   "required": [ "name" ],
   "properties": {
     "name": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/name",
+      "$ref": "definitions.json#/define/name",
       "propertyOrder": 10
     },
     "title": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
+      "$ref": "definitions.json#/define/license",
       "propertyOrder": 20
     },
     "description": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/description",
+      "$ref": "definitions.json#/define/description",
       "format": "textarea"
     },
     "homepage": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/homepage",
+      "$ref": "definitions.json#/define/homepage",
       "propertyOrder": 40
     },
     "version": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/version",
+      "$ref": "definitions.json#/define/version",
       "propertyOrder": 50
     },
     "license": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
+      "$ref": "definitions.json#/define/license",
       "propertyOrder": 60
     },
     "author": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/author",
+      "$ref": "definitions.json#/define/author",
       "propertyOrder": 70
     },
     "contributors": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/contributors",
+      "$ref": "definitions.json#/define/contributors",
       "propertyOrder": 80,
       "options": { "hidden": true }
     },
@@ -48,66 +48,66 @@
         "type": "object",
         "properties": {
           "name": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/name",
+            "$ref": "definitions.json#/define/name",
             "propertyOrder": 10
           },
           "title": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
+            "$ref": "definitions.json#/define/license",
             "propertyOrder": 20
           },
           "description": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/description",
+            "$ref": "definitions.json#/define/description",
             "propertyOrder": 30,
             "format": "textarea"
           },
           "schema": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/schema",
+            "$ref": "definitions.json#/define/schema",
             "propertyOrder": 40
           },
           "url": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/url",
+            "$ref": "definitions.json#/define/url",
             "propertyOrder": 50
           },
           "path": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/path",
+            "$ref": "definitions.json#/define/path",
             "propertyOrder": 60
           },
           "data": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/data",
+            "$ref": "definitions.json#/define/data",
             "propertyOrder": 70
           },
           "format": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/format",
+            "$ref": "definitions.json#/define/format",
             "propertyOrder": 80
           },
           "mediatype": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/mediatype",
+            "$ref": "definitions.json#/define/mediatype",
             "propertyOrder": 90
           },
           "encoding": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/encoding",
+            "$ref": "definitions.json#/define/encoding",
             "propertyOrder": 100
           },
           "bytes": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/bytes",
+            "$ref": "definitions.json#/define/bytes",
             "propertyOrder": 110
           },
           "hash": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/hash",
+            "$ref": "definitions.json#/define/hash",
             "propertyOrder": 120
           },
           "dialect": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/dialect",
+            "$ref": "definitions.json#/define/dialect",
             "propertyOrder": 130,
             "options": { "hidden": true }
           },
           "sources": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/sources",
+            "$ref": "definitions.json#/define/sources",
             "propertyOrder": 140,
             "options": { "hidden": true }
           },
           "licence": {
-            "$ref": "http://schemas.datapackages.org/definitions.json#/define/license",
+            "$ref": "definitions.json#/define/license",
             "description": "The license under which the resource is published.",
             "propertyOrder": 150
           }
@@ -120,26 +120,26 @@
       }
     },
     "keywords": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/keywords",
+      "$ref": "definitions.json#/define/keywords",
       "propertyOrder": 100
     },
     "sources": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/sources",
+      "$ref": "definitions.json#/define/sources",
       "propertyOrder": 110,
       "options": { "hidden": true }
     },
     "image": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/image",
+      "$ref": "definitions.json#/define/image",
       "propertyOrder": 120,
       "options": { "hidden": true }
     },
     "base": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/base",
+      "$ref": "definitions.json#/define/base",
       "propertyOrder": 130,
       "options": { "hidden": true }
     },
     "dataDependencies": {
-      "$ref": "http://schemas.datapackages.org/definitions.json#/define/dataDependencies",
+      "$ref": "definitions.json#/define/dataDependencies",
       "propertyOrder": 140,
       "options": { "hidden": true }
     }
