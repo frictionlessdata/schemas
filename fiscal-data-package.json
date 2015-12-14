@@ -219,24 +219,29 @@
               "properties": {
                 "attributes": {
                   "title": "Attributes",
-                  "description": "An array of attribute objects that make up the dimension",
-                  "type": "array",
+                  "description": "Attribute objects that make up the dimension",
+                  "type": "object",
                   "minItems": 1,
-                  "items": {
-                    "type": "object",
-                    "patternProperties": {
-                      "^\\w+": {
-                        "type": "object",
-                        "properties": {
-                          "source": {
-                            "type": "string"
-                          },
-                          "resource": {
-                            "type": "string"
-                          }
+                  "patternProperties": {
+                    "^\\w+": {
+                      "type": "object",
+                      "properties": {
+                        "source": {
+                          "type": "string"
                         },
-                        "required": ["source"]
-                      }
+                        "resource": {
+                          "type": "string"
+                        },
+                        "constant": {
+                        },
+                        "parent": {
+                          "type": "string"
+                        },
+                        "labelfor": {
+                          "type": "string"
+                        }
+                      },
+                      "required": ["source"]
                     }
                   }
                 },
@@ -267,7 +272,8 @@
                   "description": "The type of the classification.",
                   "enum": ["functional","administrative","economic"]
                 }
-              }
+              },
+              "required": ["attributes", "primaryKey"]
             }
           }
         }
