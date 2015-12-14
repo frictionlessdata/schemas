@@ -233,6 +233,10 @@
                           "type": "string"
                         },
                         "constant": {
+                          "oneOf": [
+                            { "type": "string" },
+                            { "type": "number" }
+                          ]
                         },
                         "parent": {
                           "type": "string"
