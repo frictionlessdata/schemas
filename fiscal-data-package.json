@@ -179,24 +179,15 @@
             "^\\w+": {
               "type": "object",
               "properties": {
-                "source": {
-                  "type": "string"
-                },
-                "resource": {
-                  "type": "string"
-                },
-                "currency": {
-                  "type": "string",
-                  "pattern": "^[A-Z]{3}$"
-                },
-                "factor": {
-                  "type": "number"
-                },
+                "source": { "type": "string" },
+                "resource": { "type": "string" },
+                "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+                "factor": { "type": "number" },
                 "direction": {
                   "title": "Direction of the spending",
                   "description": "A keyword that represents the direction of the spend, either expenditure or revenue.",
                   "type": "string",
-                  "enum": ["expenditure", "revenue"]
+                  "enum": [ "expenditure", "revenue" ]
                 },
                 "phase": {
                   "title": "Budget phase",
@@ -205,7 +196,7 @@
                   "enum": ["proposed", "approved", "adjusted", "executed"]
                 }
               },
-              "required": ["source", "currency"]
+              "required": [ "source", "currency" ]
             }
           }
         },
@@ -226,26 +217,18 @@
                     "^\\w+": {
                       "type": "object",
                       "properties": {
-                        "source": {
-                          "type": "string"
-                        },
-                        "resource": {
-                          "type": "string"
-                        },
+                        "source": { "type": "string" },
+                        "resource": { "type": "string" },
                         "constant": {
                           "oneOf": [
                             { "type": "string" },
                             { "type": "number" }
                           ]
                         },
-                        "parent": {
-                          "type": "string"
-                        },
-                        "labelfor": {
-                          "type": "string"
-                        }
+                        "parent": { "type": "string" },
+                        "labelfor": { "type": "string" }
                       },
-                      "required": ["source"]
+                      "required": [ "source" ]
                     }
                   }
                 },
@@ -253,15 +236,11 @@
                   "title": "Primary Key",
                   "description": "Either an array of strings corresponding to the name attributes in a set of field objects in the fields array or a single string corresponding to one of these names. The value of primaryKey indicates the primary key or primary keys for the dimension.",
                   "oneOf": [
-                    {
-                      "type": "string"
-                    },
+                    { "type": "string" },
                     {
                       "type": "array",
                       "minItems": 1,
-                      "items": {
-                        "type": "string"
-                      }
+                      "items": { "type": "string" }
                     }
                   ]
                 },
@@ -269,20 +248,28 @@
                   "title": "Dimension Type",
                   "description": "Describes what kind of a dimension it is.",
                   "type": "string",
-                  "enum": ["datetime","entity","classification","activity","fact","location","other"]
+                  "enum": [
+                    "datetime",
+                    "entity",
+                    "classification",
+                    "activity",
+                    "fact",
+                    "location",
+                    "other"
+                  ]
                 },
                 "classificationType": {
                   "title": "Classification Type",
                   "description": "The type of the classification.",
-                  "enum": ["functional","administrative","economic"]
+                  "enum": [ "functional", "administrative", "economic" ]
                 }
               },
-              "required": ["attributes", "primaryKey"]
+              "required": [ "attributes", "primaryKey" ]
             }
           }
         }
       },
-      "required": ["measures","dimensions"]
+      "required": [ "measures", "dimensions" ]
     }
   }
 }
