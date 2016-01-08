@@ -10,7 +10,7 @@
       "propertyOrder": 10
     },
     "title": {
-      "$ref": "definitions.json#/define/license",
+      "$ref": "definitions.json#/define/title",
       "propertyOrder": 20
     },
     "description": {
@@ -52,7 +52,7 @@
             "propertyOrder": 10
           },
           "title": {
-            "$ref": "definitions.json#/define/license",
+            "$ref": "definitions.json#/define/title",
             "propertyOrder": 20
           },
           "description": {
