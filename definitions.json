@@ -19,12 +19,12 @@
     },
     "title": {
       "title": "Title",
-      "description": "A human-readable title for this package.",
+      "description": "A human-readable title.",
       "type": "string"
     },
     "description": {
       "title": "Description",
-      "description": "A text description of the package.",
+      "description": "A text description.",
       "type": "string"
     },
     "homepage": {
