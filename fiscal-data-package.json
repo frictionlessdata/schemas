@@ -15,7 +15,8 @@
     },
     "description": {
       "$ref": "definitions.json#/define/description",
-      "format": "textarea"
+      "format": "textarea",
+      "propertyOrder": 30
     },
     "homepage": {
       "$ref": "definitions.json#/define/homepage",
