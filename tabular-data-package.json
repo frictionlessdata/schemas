@@ -112,7 +112,8 @@
           "license": {
             "$ref": "definitions.json#/define/license",
             "description": "The license under which the resource is published.",
-            "propertyOrder": 150
+            "propertyOrder": 150,
+            "options": { "hidden": true }
           }
         },
         "anyOf": [
