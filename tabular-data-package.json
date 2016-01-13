@@ -91,11 +91,13 @@
           },
           "bytes": {
             "$ref": "definitions.json#/define/bytes",
-            "propertyOrder": 110
+            "propertyOrder": 110,
+            "options": { "hidden": true }
           },
           "hash": {
             "$ref": "definitions.json#/define/hash",
-            "propertyOrder": 120
+            "propertyOrder": 120,
+            "options": { "hidden": true }
           },
           "dialect": {
             "$ref": "definitions.json#/define/dialect",
@@ -107,7 +109,7 @@
             "propertyOrder": 140,
             "options": { "hidden": true }
           },
-          "licence": {
+          "license": {
             "$ref": "definitions.json#/define/license",
             "description": "The license under which the resource is published.",
             "propertyOrder": 150
