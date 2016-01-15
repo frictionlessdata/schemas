@@ -39,7 +39,7 @@
                 "format": {
                   "type": "string",
                   "propertyOrder": 50
-                },
+                }
               }
             }
           }
