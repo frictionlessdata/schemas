@@ -15,26 +15,29 @@
               "type": "array",
               "minItems": 0,
               "items": {
-                "name": {
-                  "type": "string",
-                  "propertyOrder": 10
-                },
-                "title": {
-                  "type": "string",
-                  "propertyOrder": 20
-                },
-                "description": {
-                  "type": "string",
-                  "propertyOrder": 30
-                },
-                "type": {
-                  "type": "string",
-                  "propertyOrder": 40
-                },
-                "format": {
-                  "type": "string",
-                  "propertyOrder": 50
-                }
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "propertyOrder": 10
+                    },
+                    "title": {
+                      "type": "string",
+                      "propertyOrder": 20
+                    },
+                    "description": {
+                      "type": "string",
+                      "propertyOrder": 30
+                    },
+                    "type": {
+                      "type": "string",
+                      "propertyOrder": 40
+                    },
+                    "format": {
+                      "type": "string",
+                      "propertyOrder": 50
+                    }
+                  }
               }
             }
           }
