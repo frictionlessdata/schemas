@@ -9,9 +9,7 @@
     "schema": {
       "title": "Schema",
       "description": "The JSON Table Schema that describes of this resource.",
-      "oneOf": [
-        {
-          "type": "object",
+      "type": "object",
           "properties": {
             "fields": {
               "type": "array",
@@ -40,11 +38,6 @@
               }
             }
           }
-        },
-        {
-          "type": "string"
-        }
-      ]
     },
     "name": {
       "title": "Name",
