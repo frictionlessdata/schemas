@@ -11,9 +11,6 @@
       "description": "The JSON Table Schema that describes of this resource.",
       "oneOf": [
         {
-          "type": "string"
-        },
-        {
           "type": "object",
           "properties": {
             "fields": {
@@ -43,6 +40,9 @@
               }
             }
           }
+        },
+        {
+          "type": "string"
         }
       ]
     },
