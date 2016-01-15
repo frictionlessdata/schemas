@@ -10,12 +10,13 @@
       "propertyOrder": 10
     },
     "title": {
-      "$ref": "definitions.json#/define/license",
+      "$ref": "definitions.json#/define/title",
       "propertyOrder": 20
     },
     "description": {
       "$ref": "definitions.json#/define/description",
-      "format": "textarea"
+      "format": "textarea",
+      "propertyOrder": 30
     },
     "homepage": {
       "$ref": "definitions.json#/define/homepage",
@@ -52,7 +53,7 @@
             "propertyOrder": 10
           },
           "title": {
-            "$ref": "definitions.json#/define/license",
+            "$ref": "definitions.json#/define/title",
             "propertyOrder": 20
           },
           "description": {
@@ -90,11 +91,13 @@
           },
           "bytes": {
             "$ref": "definitions.json#/define/bytes",
-            "propertyOrder": 110
+            "propertyOrder": 110,
+            "options": { "hidden": true }
           },
           "hash": {
             "$ref": "definitions.json#/define/hash",
-            "propertyOrder": 120
+            "propertyOrder": 120,
+            "options": { "hidden": true }
           },
           "dialect": {
             "$ref": "definitions.json#/define/dialect",
@@ -106,10 +109,11 @@
             "propertyOrder": 140,
             "options": { "hidden": true }
           },
-          "licence": {
+          "license": {
             "$ref": "definitions.json#/define/license",
             "description": "The license under which the resource is published.",
-            "propertyOrder": 150
+            "propertyOrder": 150,
+            "options": { "hidden": true }
           }
         },
         "anyOf": [
