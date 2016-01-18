@@ -9,7 +9,38 @@
     "schema": {
       "title": "Schema",
       "description": "The JSON Table Schema that describes of this resource.",
-      "oneOf": [ { "type": "string" }, { "type": "object" } ]
+      "type": "object",
+          "properties": {
+            "fields": {
+              "type": "array",
+              "minItems": 0,
+              "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "propertyOrder": 10
+                    },
+                    "title": {
+                      "type": "string",
+                      "propertyOrder": 20
+                    },
+                    "description": {
+                      "type": "string",
+                      "propertyOrder": 30
+                    },
+                    "type": {
+                      "type": "string",
+                      "propertyOrder": 40
+                    },
+                    "format": {
+                      "type": "string",
+                      "propertyOrder": 50
+                    }
+                  }
+              }
+            }
+          }
     },
     "name": {
       "title": "Name",
