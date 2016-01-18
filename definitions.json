@@ -128,7 +128,7 @@
       "title": "Hash",
       "type": "string",
       "description": "The MD5 hash of this resource. Indicate other hashing algorithms with the {algorithm}:{hash} format.",
-      "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32})$"
+      "pattern": "^([^:]+:[a-fA-F0-9]+|[a-fA-F0-9]{32}|)$"
     },
     "dialect": {
       "title": "Dialect",
