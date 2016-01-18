@@ -31,6 +31,22 @@
                     },
                     "type": {
                       "type": "string",
+                      "enum": [
+                        "string",
+                        "number",
+                        "integer",
+                        "boolean",
+                        "object",
+                        "null",
+                        "array",
+                        "datetime",
+                        "date",
+                        "time",
+                        "duration",
+                        "geopoint",
+                        "geojson",
+                        "any"
+                      ],
                       "propertyOrder": 40
                     },
                     "format": {
