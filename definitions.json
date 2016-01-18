@@ -82,15 +82,9 @@
       "title": "Data",
       "description": "The inline data for this resource.",
       "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array"
-        },
-        {
-          "type": "object"
-        }
+        { "type": "string" },
+        { "type": "array" },
+        { "type": "object" }
       ]
     },
     "format": {
@@ -136,25 +130,15 @@
       "type": "array",
       "items": {
         "oneOf": [
-          {
-            "type": "string"
-          },
+          { "type": "string" },
           {
             "type": "object",
             "properties": {
-              "name": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "web": {
-                "type": "string"
-              }
+              "name": { "type": "string" },
+              "email": { "type": "string" },
+              "web": { "type": "string" }
             },
-            "required": [
-              "name"
-            ]
+            "required": [ "name" ]
           }
         ]
       }
@@ -163,32 +147,16 @@
       "title": "License",
       "description": "The license under which this package is published.",
       "oneOf": [
-        {
-          "type": "string"
-        },
+        { "type": "string" },
         {
           "type": "object",
           "properties": {
-            "type": {
-              "type": "string"
-            },
-            "url": {
-              "type": "string"
-            }
+            "type": { "type": "string" },
+            "url": { "type": "string" }
           },
           "anyOf": [
-            {
-              "title": "type required",
-              "required": [
-                "type"
-              ]
-            },
-            {
-              "title": "url required",
-              "required": [
-                "url"
-              ]
-            }
+            { "title": "type required", "required": [ "type" ] },
+            { "title": "url required", "required": [ "url" ] }
           ]
         }
       ]
@@ -201,35 +169,14 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string"
-          },
-          "web": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          }
+          "name": { "type": "string" },
+          "web": { "type": "string" },
+          "email": { "type": "string" }
         },
         "anyOf": [
-          {
-            "title": "name required",
-            "required": [
-              "name"
-            ]
-          },
-          {
-            "title": "web required",
-            "required": [
-              "web"
-            ]
-          },
-          {
-            "title": "email required",
-            "required": [
-              "email"
-            ]
-          }
+          { "title": "name required", "required": ["name"] },
+          { "title": "web required", "required": ["web"] },
+          { "title": "email required", "required": ["email"] }
         ]
       }
     },
@@ -237,9 +184,7 @@
       "title": "Keywords",
       "description": "A list of keywords that describe this package.",
       "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "items": { "type": "string" }
     },
     "image": {
       "title": "Image",
@@ -255,17 +200,11 @@
       "title": "ISO 3166-1 Alpha-2 Country code",
       "description": "A valid 2-digit ISO country code (ISO 3166-1 alpha-2), or, an array of valid ISO codes.",
       "oneOf": [
-        {
-          "type": "string",
-          "pattern": "^[A-Z]{2}$"
-        },
+        { "type": "string", "pattern": "^[A-Z]{2}$" },
         {
           "type": "array",
           "minItems": 1,
-          "items": {
-            "type": "string",
-            "pattern": "^[A-Z]{2}$"
-          }
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
         }
       ]
     }
