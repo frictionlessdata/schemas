@@ -1,5 +1,5 @@
 {
    "@context": {
-     "@vocab": "fiscal-data-package.jsonld#"
+     "@vocab": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld#"
    }
 }
