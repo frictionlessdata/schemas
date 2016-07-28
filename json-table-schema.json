@@ -27,6 +27,7 @@
               "geopoint",
               "geojson",
               "array",
+              "duration",
               "any"
             ]
           },
