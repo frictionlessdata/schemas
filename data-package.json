@@ -3,7 +3,7 @@
   "title": "Data Package",
   "description": "Data Package is a simple specification for data access and delivery.",
   "type": "object",
-  "required": [ "name" ],
+  "required": [ "name", "resources" ],
   "properties": {
     "name": {
       "$ref": "definitions.json#/define/name",
