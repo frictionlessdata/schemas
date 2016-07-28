@@ -32,7 +32,6 @@
                         "integer",
                         "boolean",
                         "object",
-                        "null",
                         "array",
                         "datetime",
                         "date",
