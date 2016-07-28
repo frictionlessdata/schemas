@@ -120,7 +120,8 @@
           { "title": "url required", "required": ["url"] },
           { "title": "path required", "required": ["path"] },
           { "title": "data required", "required": ["data"] }
-        ]
+        ],
+        "required": [ "schema" ]
       }
     },
     "keywords": {
