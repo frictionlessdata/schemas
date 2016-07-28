@@ -22,7 +22,6 @@
               "time",
               "datetime",
               "boolean",
-              "binary",
               "object",
               "geopoint",
               "geojson",
