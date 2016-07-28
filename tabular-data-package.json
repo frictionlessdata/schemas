@@ -138,11 +138,6 @@
       "propertyOrder": 120,
       "options": { "hidden": true }
     },
-    "base": {
-      "$ref": "definitions.json#/define/base",
-      "propertyOrder": 130,
-      "options": { "hidden": true }
-    },
     "dataDependencies": {
       "$ref": "definitions.json#/define/dataDependencies",
       "propertyOrder": 140,

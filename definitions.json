@@ -1,11 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "define": {
-    "base": {
-      "title": "Base",
-      "description": "A base URI or path for resource paths in this package.",
-      "type": "string"
-    },
     "schema": {
       "title": "Schema",
       "description": "The JSON Table Schema that describes of this resource.",
