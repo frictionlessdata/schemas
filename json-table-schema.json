@@ -30,6 +30,7 @@
               "any"
             ]
           },
+          "rdfType": {"type": "string" },
           "format": { "type": "string" },
           "constraints": {
             "type": "object",
