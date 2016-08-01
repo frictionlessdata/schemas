@@ -1,11 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "define": {
-    "base": {
-      "title": "Base",
-      "description": "A base URI or path for resource paths in this package.",
-      "type": "string"
-    },
     "schema": {
       "title": "Schema",
       "description": "The JSON Table Schema that describes of this resource.",
@@ -37,7 +32,6 @@
                         "integer",
                         "boolean",
                         "object",
-                        "null",
                         "array",
                         "datetime",
                         "date",
@@ -137,26 +131,26 @@
     },
     "author": {
       "title": "Author",
-      "description": "The main contributor to this package.",
-      "type": "string"
+      "description": "A contributor to this package.",
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string" },
+            "web": { "type": "string" }
+          },
+          "required": [ "name" ]
+        }
+      ]
     },
     "contributors": {
       "title": "Contributors",
       "description": "The contributors to this package.",
       "type": "array",
       "items": {
-        "oneOf": [
-          { "type": "string" },
-          {
-            "type": "object",
-            "properties": {
-              "name": { "type": "string" },
-              "email": { "type": "string" },
-              "web": { "type": "string" }
-            },
-            "required": [ "name" ]
-          }
-        ]
+        "$ref": "#/define/author"
       }
     },
     "license": {

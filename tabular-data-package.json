@@ -120,7 +120,8 @@
           { "title": "url required", "required": ["url"] },
           { "title": "path required", "required": ["path"] },
           { "title": "data required", "required": ["data"] }
-        ]
+        ],
+        "required": [ "schema" ]
       }
     },
     "keywords": {
@@ -135,11 +136,6 @@
     "image": {
       "$ref": "definitions.json#/define/image",
       "propertyOrder": 120,
-      "options": { "hidden": true }
-    },
-    "base": {
-      "$ref": "definitions.json#/define/base",
-      "propertyOrder": 130,
       "options": { "hidden": true }
     },
     "dataDependencies": {

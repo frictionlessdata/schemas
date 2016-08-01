@@ -22,14 +22,15 @@
               "time",
               "datetime",
               "boolean",
-              "binary",
               "object",
               "geopoint",
               "geojson",
               "array",
+              "duration",
               "any"
             ]
           },
+          "rdfType": {"type": "string" },
           "format": { "type": "string" },
           "constraints": {
             "type": "object",
