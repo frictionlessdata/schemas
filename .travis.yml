@@ -4,5 +4,6 @@ python:
 sudo: false
 install:
   - pip install jsonschema
+  - pip install requests
 script:
   - python -m unittest discover
