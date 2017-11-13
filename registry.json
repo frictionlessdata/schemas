@@ -3,7 +3,7 @@
         "title": "Data Package",
         "schema": "https://schemas.frictionlessdata.io/data-package.json",
         "schema_path": "data-package.json",
-        "specification": "https://specs.frictionlessdata.io/data-packages/"
+        "specification": "https://specs.frictionlessdata.io/data-package/"
     },
     "tabular-datapackage": {
         "title": "Tabular Data Package",
